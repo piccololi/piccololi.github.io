@@ -1,0 +1,101 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hant-TW" xml:lang="zh-Hant-TW">
+
+
+<head>
+	<title>Piccololi</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style>
+	</style>
+	<link rel="stylesheet" href="css/piccololi-style.css">
+	<link rel="stylesheet" href="css/leaf-animation.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
+</head>
+
+
+<body>
+	<div id="leaves">
+		<i></i>
+		<i></i>
+		<i></i>
+		<i></i>
+		<i></i>
+		<i></i>
+		<i></i>
+		<i></i>
+		<i></i>
+		<i></i>
+		<i></i>
+		<i></i>
+		<!-- <i></i> -->
+		<!-- <i></i> -->
+		<!-- <i></i>  -->
+	</div>
+
+	<!-- <img src="weeeedyellow_trans.png" style="position: -webkit-sticky; position: sticky; top: 0;"> -->
+	<div style="text-align: center;">
+	<div style="margin-top: 10x; margin-bottom: 50px;">
+		<!-- <h1 style="display: inline">Piccololi</h1> -->
+		<div style="margin-top: 30px; margin-bottom: 20px"><img id="img-logo" src="image/piccololi3_edit_3.png" style="width: 400px"></div>
+		<h4 style="display: inline">a fully on-chain NFT collection on smartBCH</h4>
+	</div>  
+
+	<!-- <div style="width: 600px; text-align: center; margin: 0 auto 100px"> -->
+	<div id="div-piccololis" style="text-align: center; margin: 0 auto 20px">
+		<span class="img-span" id="img-span-a"><img id="img-a" class="demo" onclick="moveImages(-2)" style="opacity: 0.3;"></span>
+		<span class="img-span" id="img-span-b"><img id="img-b" class="demo" onclick="moveImages(-1)" style="opacity: 0.65;"></span>
+		<span class="img-span-center" id="img-span-c"><img id="img-c" class="demo-center" onclick="moveImages(99)" width="192"></span>
+		<span class="img-span" id="img-span-d"><img id="img-d" class="demo" onclick="moveImages(1)" style="opacity: 0.65;"></span>
+		<span class="img-span" id="img-span-e"><img id="img-e" class="demo" onclick="moveImages(2)" style="opacity: 0.3;"></span>
+	</div>
+
+	<div id="div-new-piccololi" style="text-align: center; margin: 0 auto 20px; display: none">
+		<div id="div-piccololi-name" style="font-size: large"></div>
+		<span class="img-span-center" id="img-span-x"><img id="img-x" class="demo-center" onclick="showConfetti()" width="256"></span>
+		<div id="div-piccololi-info" style="width: 360px; text-align: center; margin: 0 auto 0; vertical-align: middle;"></div>
+		<!-- <div id="div-piccololi-sequence" style="font-size:x-small; margin-top: 10px;"></div> -->
+	</div>
+
+
+	<div id="div-mint-stats-1" style="margin: 20px auto 30px; font-size: small; letter-spacing: 2px; width: 350px">&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</div>
+
+	<div style="margin-bottom: 50px; text-align: center;">
+
+		<button id="button-mint" onclick="showSubmit()">MINT</button>
+
+		<div id="div-mint-info" style="font-size: small; width: 350px; text-align: left; margin: 0px auto 50px; display: none;">By minting you agree to the <a href="t-and-c.html">Terms and Conditions</a> and acknownledge that you have read about information on <a href="faq.html">What is Piccololi?</a></div>
+
+		<button id="button-sign-with-wallet" onclick="mintPiccololi()" style="display: none;">Sign with Wallet</button>
+		
+		<br>
+
+		<div id="div-what-is-piccololi" style="font-size: small; width: 350px; text-align: center; margin: 10px auto;"><a href="faq.html">What is Piccololi?</a></div>
+		<!-- <div id="div-mint-status"></div> -->
+	</div>
+
+	<div>
+		<a href="https://noise.cash/c/piccololi-nft-1zp4gvk1">noise.cash</a>&nbsp;&nbsp;&nbsp;&#127852;&nbsp;&nbsp;&nbsp;
+		<!-- <a href="https://read.cash/@Piccololi">read.cash</a>&nbsp;&nbsp;&nbsp;&#127852;&nbsp;&nbsp;&nbsp; -->
+		<a href="https://twitter.com/PiccololiNFT">Twitter</a>&nbsp;&nbsp;&nbsp;&#127852;&nbsp;&nbsp;&nbsp;
+		<a href="https://t.me/piccololiNFT">Telegram</a>
+	</div>
+	</div>
+
+
+
+	<script src="script/piccololi-display.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+	<script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+	<script src="script/network-config.js"></script>
+	<script src="script/connect-wallet-and-network.js"></script>
+	<script src="script/contract-abi.js"></script>
+	<script src="script/common-tools.js"></script>
+	<script src="script/piccololi-mint.js"></script>
+</body>
+</html>

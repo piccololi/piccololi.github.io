@@ -1,0 +1,59 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hant-TW" xml:lang="zh-Hant-TW">
+
+
+<head>
+	<title>Piccololi</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style>
+	</style>
+	<link rel="stylesheet" href="css/piccololi-style.css">
+	<link rel="stylesheet" href="css/leaf-animation.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
+</head>
+
+
+<body>
+	<!-- <img src="weeeedyellow_trans.png" style="position: -webkit-sticky; position: sticky; top: 0;"> -->
+	<div style="text-align: center;">
+
+		<h3>
+			Piccololi #
+			<input type="number" name="input-token-id" id="input-token-id" type="text" placeholder="" style="width: 80px" min="1" onchange="showToken()">
+		</h3>
+
+		<div id="invalid-token-id" style="text-align: center; margin: 0 auto 20px; display: none">Invalid Piccololi ID</div>
+		<div id="div-loading" style="text-align: center; margin: 0 auto 20px; display: none"></div>
+		<div id="div-new-piccololi" style="text-align: center; margin: 0 auto 30px; display: none">
+			<!-- <div id="div-piccololi-name" style="font-size: large"></div> -->
+			<span class="img-span-center" id="img-span-x"><img id="img-x" class="demo-center" onclick="showConfetti()" width="256"></span>
+			<div id="div-piccololi-info" style="width: 360px; text-align: center; margin: 0 auto 0; vertical-align: middle;"></div>
+			<!-- <div id="div-piccololi-sequence" style="font-size:x-small; margin-top: 10px;"></div> -->
+		</div>
+
+		<div>
+			<a href="https://noise.cash/c/piccololi-nft-1zp4gvk1">noise.cash</a>&nbsp;&nbsp;&nbsp;&#127852;&nbsp;&nbsp;&nbsp;
+			<!-- <a href="https://read.cash/@Piccololi">read.cash</a>&nbsp;&nbsp;&nbsp;&#127852;&nbsp;&nbsp;&nbsp; -->
+			<a href="https://twitter.com/PiccololiNFT">Twitter</a>&nbsp;&nbsp;&nbsp;&#127852;&nbsp;&nbsp;&nbsp;
+			<a href="https://t.me/piccololiNFT">Telegram</a>
+		</div>
+	</div>
+
+
+
+	<script src="script/piccololi-display-2.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+	<script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+	<script src="script/network-config.js"></script>
+	<script src="script/connect-wallet-and-network.js"></script>
+	<script src="script/contract-abi.js"></script>
+	<script src="script/common-tools.js"></script>
+	<script src="script/piccololi.js"></script>
+</body>
+</html>
