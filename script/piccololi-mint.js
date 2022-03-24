@@ -93,6 +93,12 @@ async function mintPiccololi(){
         return;
     }
 
+    if ( _IS_NETWORK_CONNECTED_ == false) {
+        alert('Please connect to the smartBCH network.');
+
+        return;
+    }
+
     document.getElementById('div-mint-info').innerHTML = 'Minting Piccololi... ' + SPINNING_WHEEL_IMG;
     document.getElementById('div-mint-info').style.textAlign = 'center';
     
