@@ -84,13 +84,20 @@ let confettiCount = 0;
 
 async function mintPiccololi(){
 
+    await connectWallet();
+    await connectNetwork();
+
+    if ( _IS_WALLET_CONNECTED_ == undefined) {
+        alert('A web3 wallet such as MetaMask is required.');
+
+        return;
+    }
+
     document.getElementById('div-mint-info').innerHTML = 'Minting Piccololi... ' + SPINNING_WHEEL_IMG;
     document.getElementById('div-mint-info').style.textAlign = 'center';
     
     document.getElementById('button-sign-with-wallet').disabled = true;
 
-    await connectWallet();
-    await connectNetwork();
 
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
