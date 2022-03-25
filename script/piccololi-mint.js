@@ -118,7 +118,7 @@ async function mintPiccololi(){
 
         const tx = await contractFunction.wait();
         console.log(tx);
-        createdTokenId = Number(tx.events.topics[3]);
+        createdTokenId = Number(tx.events[0].topics[3]);
 
         // // let createdTokenId;
         // for (let i = 0; i < tx.events.length; i++){
