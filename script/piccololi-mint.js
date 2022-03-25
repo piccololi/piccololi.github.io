@@ -117,13 +117,15 @@ async function mintPiccololi(){
         );
 
         const tx = await contractFunction.wait();
+        console.log(tx);
+        createdTokenId = Number(tx.events.topics[3]);
 
-        // let createdTokenId;
-        for (let i = 0; i < tx.events.length; i++){
-            if (tx.events[i].event == 'Transfer'){
-                createdTokenId = tx.events[i].args[2].toNumber();
-            }
-        }
+        // // let createdTokenId;
+        // for (let i = 0; i < tx.events.length; i++){
+        //     if (tx.events[i].event == 'Transfer'){
+        //         createdTokenId = tx.events[i].args[2].toNumber();
+        //     }
+        // }
 
         document.getElementById('div-mint-info').innerHTML = `Piccololi #${createdTokenId} has been created. Sending image on-chain... ` + SPINNING_WHEEL_IMG;
 
