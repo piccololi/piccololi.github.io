@@ -108,13 +108,15 @@ input, textarea {
 img.demo {
     border-radius: 7px;
     width: 64px;
-    cursor: pointer
+    cursor: pointer; 
+    image-rendering: pixelated;
 }
 
 img.demo-center {
     border-radius: 10px;
     width: 200px;
-    cursor: pointer
+    cursor: pointer; 
+    image-rendering: pixelated;
 }
 
 
