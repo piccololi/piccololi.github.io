@@ -11,7 +11,7 @@ window.addEventListener("orientationchange", function() {
     // Announce the new orientation number
     // alert(window.orientation);
     optimizeLayout();
-    updateDemoImages()
+    // updateDemoImages();
     console.log('rotated');
   }, false);
 
@@ -30,6 +30,8 @@ function optimizeLayout(){
             // document.getElementById('div-main-content').style.textAlign = 'left';
             document.getElementById('img-logo').style.width = window.screen.availWidth * 0.9 + 'px';
         } else {
+            document.getElementById('div-main-content').style.width = '550px';
+            document.getElementById('img-logo').style.width = '400px';
             const body = document.getElementsByTagName('body')[0];
             body.style.backgroundImage = "url('image/background_3_trans.png')";
             body.style.backgroundPosition = 'top';
